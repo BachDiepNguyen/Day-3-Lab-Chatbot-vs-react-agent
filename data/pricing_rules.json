@@ -1,0 +1,22 @@
+{
+  "vat_rate": 0.1,
+  "quantity_discounts": [
+    {
+      "min_quantity": 20,
+      "discount_percent": 3
+    },
+    {
+      "min_quantity": 50,
+      "discount_percent": 5
+    },
+    {
+      "min_quantity": 100,
+      "discount_percent": 8
+    }
+  ],
+  "customer_type_discounts": {
+    "standard": 0,
+    "partner": 2,
+    "enterprise": 4
+  }
+}

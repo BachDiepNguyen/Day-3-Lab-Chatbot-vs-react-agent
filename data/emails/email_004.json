@@ -1,0 +1,9 @@
+{
+  "id": "email_004",
+  "from": "rfq@delta-industrial.vn",
+  "subject": "RFQ theo file đính kèm",
+  "body": "Chào phòng kinh doanh,\n\nVui lòng báo giá các sản phẩm trong file đính kèm, có VAT.\n\nCảm ơn.",
+  "attachments": [
+    "data/attachments/rfq_delta.csv"
+  ]
+}

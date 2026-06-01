@@ -1,0 +1,3 @@
+sku,product_name,quantity,include_vat,destination
+SENSOR-TEMP-10,Industrial Temperature Sensor,30,true,Hanoi
+IOT-GW-500,IoT Gateway,3,true,Hanoi

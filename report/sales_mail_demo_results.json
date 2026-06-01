@@ -1,0 +1,62 @@
+[
+  {
+    "email_id": "email_001",
+    "baseline": "Chào bạn,\n\nCảm ơn bạn đã liên hệ với chúng tôi. Để gửi báo giá chính xác cho 50 bộ AI-CAM-200, bao gồm VAT và điều kiện giao hàng tại Hà Nội, một nhân viên bán hàng sẽ cần xác minh dữ liệu. \n\nVui lòng cho tôi biết thông tin liên lạc của bạn để chúng tôi có thể liên hệ và cung cấp báo giá trong thời gian sớm nhất.\n\nCảm ơn bạn!\n\nTrân trọng,  \n[Your Name]  \n[Your Position]  \n[Your Company]  \n[Your Contact Information]",
+    "agent": "Kính gửi Quý khách,\n\nCảm ơn Quý khách đã liên hệ. Dựa trên thông tin hiện có, chúng tôi xin gửi phản hồi sơ bộ:\n\nChào anh/chị,\n\nDưới đây là báo giá cho yêu cầu của anh/chị:\n- Sản phẩm: Camera AI Edge AI-CAM-200\n- Số lượng: 50 bộ\n- Giá mỗi bộ: 2,500,000 VND\n- Tổng giá trị trước chiết khấu: 125,000,000 VND\n- Chiết khấu: 6,250,000 VND (5%)\n- VAT (10%): 11,875,000 VND\n- Tổng giá trị sau chiết khấu và VAT: 130,625,000 VND\n\nSản phẩm có sẵn tại kho và có thể giao tại Hà Nội trong tháng này.\n\nCảm ơn anh/chị đã quan tâm đến sản phẩm của chúng tôi.\n\nTrân trọng,\n\nBáo giá này cần được nhân viên kinh doanh kiểm tra lần cuối trước khi gửi chính thức.",
+    "agent_stats": {
+      "status": "completed",
+      "steps": 6,
+      "tool_calls": 5
+    }
+  },
+  {
+    "email_id": "email_002",
+    "baseline": "Chào anh/chị,\n\nCảm ơn anh/chị đã liên hệ về việc đặt hàng 4 bộ IOT-GW-500. Tôi sẽ cần một nhân viên bán hàng xác nhận thông tin về số lượng còn hàng cũng như tổng giá trị đơn hàng có VAT trước khi gửi báo giá chính thức cho anh/chị.\n\nXin vui lòng chờ chút, tôi sẽ phản hồi sớm nhất có thể.\n\nTrân trọng.",
+    "agent": "Kính gửi Quý khách,\n\nCảm ơn Quý khách đã liên hệ. Dựa trên thông tin hiện có, chúng tôi xin gửi phản hồi sơ bộ: \nChúng tôi xác nhận rằng có 8 bộ IoT Gateway IOT-GW-500 sẵn có trong kho. Tổng giá trị đơn hàng cho 4 bộ là 18.480.000 VND bao gồm VAT. Nếu bạn có thêm yêu cầu nào khác, xin vui lòng cho chúng tôi biết.\n\nBáo giá này cần được nhân viên kinh doanh kiểm tra lần cuối trước khi gửi chính thức.\n\nTrân trọng,  \nSales Team",
+    "agent_stats": {
+      "status": "completed",
+      "steps": 6,
+      "tool_calls": 5
+    }
+  },
+  {
+    "email_id": "email_003",
+    "baseline": "Chào anh/chị,\n\nCảm ơn anh/chị đã liên hệ với chúng tôi về giải pháp camera AI. Để có thể cung cấp báo giá chính xác, một nhân viên kinh doanh sẽ cần xác minh dữ liệu cụ thể về sản phẩm cũng như số lượng mà anh/chị cần.\n\nVui lòng cho tôi biết thêm chi tiết về yêu cầu của anh/chị, tôi sẽ sắp xếp để có thông tin cụ thể trong thời gian sớm nhất.\n\nTrân trọng,  \n[Your Name]  \n[Your Position]  \n[Your Company]  \n[Your Contact Information]",
+    "agent": "Kính gửi Quý công ty,\n\nCảm ơn Quý công ty đã liên hệ với chúng tôi về giải pháp camera AI. Để chúng tôi có thể cung cấp báo giá chính xác, xin Quý công ty vui lòng cho biết loại camera AI mà Quý công ty đang quan tâm và số lượng cần đặt hàng.\n\nChúng tôi mong nhận được phản hồi từ Quý công ty.\n\nTrân trọng.  \nSales Team",
+    "agent_stats": {
+      "status": "completed",
+      "steps": 3,
+      "tool_calls": 2
+    }
+  },
+  {
+    "email_id": "email_004",
+    "baseline": "Chào quý khách,\n\nCảm ơn quý khách đã gửi yêu cầu báo giá. Tuy nhiên, tôi không thể xem nội dung file đính kèm để xác định các sản phẩm cần báo giá. Để đảm bảo thông tin chính xác, một nhân viên bán hàng sẽ cần xác minh dữ liệu trước khi gửi báo giá chính thức.\n\nXin vui lòng chờ thêm thông tin từ chúng tôi.\n\nTrân trọng,  \n[Your Name]  \nBộ phận kinh doanh",
+    "agent": "Chào bạn,\n\nCảm ơn bạn đã gửi yêu cầu báo giá. Dưới đây là thông tin báo giá cho các sản phẩm bạn đã yêu cầu:\n\n1. **Cảm biến nhiệt độ công nghiệp (SENSOR-TEMP-10)**\n   - Số lượng: 30\n   - Giá trị tính trước chiết khấu: 25,500,000 VND\n   - Chiết khấu: 3% (765,000 VND)\n   - VAT: 10% (2,473,500 VND)\n   - Tổng cộng: 27,208,500 VND\n\n2. **Cổng IoT (IOT-GW-500)**\n   - Số lượng: 3\n   - Giá trị: 12,600,000 VND\n   - VAT: 10% (1,266,000 VND)\n   - Tổng cộng: 13,860,000 VND\n\nTổng giá trị đơn hàng: 41,068,500 VND.\n\nNếu bạn có thêm thắc mắc hoặc muốn đặt hàng, vui lòng phản hồi lại email này.\n\nTrân trọng, \n\nBáo giá này cần được nhân viên kinh doanh kiểm tra lần cuối trước khi gửi chính thức.\n\nTrân trọng,\nSales Team",
+    "agent_stats": {
+      "status": "completed",
+      "steps": 8,
+      "tool_calls": 7
+    }
+  },
+  {
+    "email_id": "email_005",
+    "baseline": "Kính gửi Quý công ty,\n\nCảm ơn Quý công ty đã gửi lời mời tham dự hội thảo marketing. Chúng tôi rất trân trọng cơ hội này và sẽ xem xét tham gia.\n\nNếu có thêm thông tin chi tiết về thời gian, địa điểm và nội dung hội thảo, xin vui lòng chia sẻ để chúng tôi có thể sắp xếp tham dự một cách tốt nhất.\n\nTrân trọng,  \n[Your Name]  \n[Your Position]  \n[Your Company]  \n[Your Contact Information]",
+    "agent": "Email này là một lời mời tham dự hội thảo marketing và không liên quan đến yêu cầu mua hàng hay báo giá.",
+    "agent_stats": {
+      "status": "completed",
+      "steps": 2,
+      "tool_calls": 1
+    }
+  },
+  {
+    "email_id": "email_006",
+    "baseline": "Chào bạn,\n\nCảm ơn bạn đã liên hệ với chúng tôi về việc mua 10 bộ ROBOT-X9. Tuy nhiên, để có giá chính xác có bao gồm VAT, một nhân viên bán hàng cần kiểm tra lại thông tin. \n\nXin vui lòng đợi một chút, chúng tôi sẽ liên lạc với bạn sớm nhất có thể để cung cấp báo giá chi tiết.\n\nTrân trọng,\n[Your Name]",
+    "agent": "Kính gửi Quý khách,\n\nCảm ơn Quý khách đã liên hệ. Dựa trên thông tin hiện có, chúng tôi xin gửi phản hồi sơ bộ:\nChào bạn,\n\nCảm ơn bạn đã liên hệ với chúng tôi. Tuy nhiên, sản phẩm ROBOT-X9 không có trong danh sách sản phẩm của chúng tôi. Vui lòng kiểm tra lại tên sản phẩm hoặc cung cấp thêm thông tin, để chúng tôi có thể hỗ trợ bạn tốt hơn.\n\nTrân trọng. \n\nBáo giá này cần được nhân viên kinh doanh kiểm tra lần cuối trước khi gửi chính thức.\n\nTrân trọng,\nSales Team",
+    "agent_stats": {
+      "status": "completed",
+      "steps": 4,
+      "tool_calls": 3
+    }
+  }
+]

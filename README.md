@@ -53,4 +53,42 @@ The code is designed as a **Production Prototype**. It includes:
 
 ---
 
+## Sales Mail Agent Prototype
+
+This repo now includes a local prototype for processing sales emails that request quotes or orders.
+
+- Tools live in `src/tools/sales_mail_tools.py`.
+- Local fixtures live in `data/`.
+- The baseline chatbot lives in `src/baseline/chatbot.py`.
+- The default demo provider is OpenAI via `OPENAI_API_KEY`.
+- A deterministic mock provider lives in `src/core/mock_provider.py`, so the demo can still run without API keys.
+
+Run the demo with OpenAI `gpt-4o-mini`:
+
+```bash
+python scripts/run_sales_mail_demo.py --provider openai --model gpt-4o-mini
+```
+
+Run one email only:
+
+```bash
+python scripts/run_sales_mail_demo.py --provider openai --model gpt-4o-mini --email-id email_001
+```
+
+Run offline with the mock provider:
+
+```bash
+python scripts/run_sales_mail_demo.py --provider mock
+```
+
+Run tests:
+
+```bash
+python -m pytest -q
+```
+
+The demo compares the chatbot baseline with the ReAct Agent and writes results to `report/sales_mail_demo_results.json`.
+
+---
+
 *Happy Coding! Let's build agents that actually work.*

@@ -1,0 +1,26 @@
+[
+  {
+    "sku": "AI-CAM-200",
+    "name": "Camera AI Edge AI-CAM-200",
+    "aliases": ["camera ai", "ai cam 200", "AI-CAM-200"],
+    "unit_price_vnd": 2500000,
+    "moq": 1,
+    "status": "active"
+  },
+  {
+    "sku": "SENSOR-TEMP-10",
+    "name": "Industrial Temperature Sensor SENSOR-TEMP-10",
+    "aliases": ["sensor nhiệt", "temperature sensor", "SENSOR-TEMP-10"],
+    "unit_price_vnd": 850000,
+    "moq": 5,
+    "status": "active"
+  },
+  {
+    "sku": "IOT-GW-500",
+    "name": "IoT Gateway IOT-GW-500",
+    "aliases": ["iot gateway", "gateway công nghiệp", "IOT-GW-500"],
+    "unit_price_vnd": 4200000,
+    "moq": 1,
+    "status": "active"
+  }
+]
