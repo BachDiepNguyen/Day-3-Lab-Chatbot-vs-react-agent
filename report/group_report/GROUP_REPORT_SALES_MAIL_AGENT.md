@@ -70,10 +70,12 @@ All steps are logged as JSON events in `logs/2026-06-01.log`:
 
 ### Tool Design Evolution
 
-| Version | Design | Issue | Improvement |
+| v1 Issue | Evidence | v2 Fix | Result |
 | :--- | :--- | :--- | :--- |
-| v1 | Basic tool descriptions and generic draft context. | `draft_reply_email` could receive placeholder or English context. | Strengthened prompt: customer-facing content must be Vietnamese and complete. |
-| v2 | Tool-backed pricing, Vietnamese draft requirement, attachment-first rule. | More reliable final outputs and better report-ready traces. | Used for final OpenAI run. |
+| Draft reply context could be generic or English. | Early runs could pass placeholder context such as `quote summary` into `draft_reply_email`. | Added a prompt rule requiring complete Vietnamese customer-facing context and normalized common placeholder/English contexts inside the draft tool. | Final outputs are Vietnamese and quote details are grounded in tool observations. |
+| Agent could be tempted to quote with incomplete request data. | `email_003` asks for camera AI pricing but gives no quantity. | Added rule: missing SKU/name or quantity must produce a clarification request. | `email_003` stops without calling `calculate_quote`. |
+| Attachment requests could be answered generically. | Baseline for `email_004` could not inspect the CSV attachment. | Added attachment-first rule and `extract_attachment_text` tool. | `email_004` reads the CSV and quotes both line items. |
+| Technical model failures were not explicitly documented. | Lab evaluation mentions parser errors and hallucinated tools. | Added tests for parser recovery and unknown-tool structured errors. | `tests/test_agent_failures.py` verifies both guardrails. |
 
 ---
 
@@ -89,6 +91,13 @@ Output file:
 
 ```text
 report/sales_mail_demo_results.json
+```
+
+Test evidence:
+
+```text
+python -m pytest -q
+12 passed, 1 skipped
 ```
 
 ### Scenario Results
@@ -125,6 +134,8 @@ Interpretation: the ReAct Agent costs more tokens and latency because it perform
 
 Input: `email_004`, RFQ with `data/attachments/rfq_delta.csv`.
 
+Trace artifact: `report/traces/success_trace_email_004.md`
+
 Observed ReAct path:
 
 ```text
@@ -144,6 +155,8 @@ Why it matters: the baseline could not inspect the attachment, while the agent c
 
 Input: `email_003`, asking for camera AI pricing without quantity.
 
+Trace artifact: `report/traces/failure_trace_missing_quantity.md`
+
 Observed ReAct path:
 
 ```text
@@ -158,6 +171,8 @@ The agent intentionally did not call `calculate_quote`, preventing a hallucinate
 
 Input: `email_006`, requesting `ROBOT-X9`.
 
+Trace artifact: `report/traces/failure_trace_parser_or_tool_not_found.md`
+
 Observed ReAct path:
 
 ```text
@@ -169,6 +184,17 @@ Final Answer: ask customer to verify product name/details
 ```
 
 The agent handled catalog miss safely instead of inventing price or stock.
+
+### Technical Failure Trace: Parser Error / Hallucinated Tool
+
+Trace artifact: `report/traces/failure_trace_parser_or_tool_not_found.md`
+
+The agent also handles two technical failures:
+
+- If the model output has no valid `Action:` or `Final Answer:`, the agent logs `AGENT_PARSE_ERROR`, appends a parser observation, and gives the model a chance to recover.
+- If the model calls an unregistered tool, the agent returns a structured `tool_not_found` observation instead of crashing.
+
+These cases are covered in `tests/test_agent_failures.py`.
 
 ---
 

@@ -17,6 +17,7 @@ I contributed to the implementation of a Sales Mail ReAct Agent for processing c
 - Added chatbot baseline in `src/baseline/chatbot.py` for direct LLM comparison.
 - Added OpenAI execution support in `scripts/run_sales_mail_demo.py` and kept `MockSalesMailProvider` for offline tests.
 - Added tests for tools and ReAct scenarios in `tests/test_sales_mail_tools.py` and `tests/test_react_agent.py`.
+- Added technical failure tests for parser recovery and unknown tool calls in `tests/test_agent_failures.py`.
 
 ---
 
@@ -59,6 +60,17 @@ Final Answer: asks customer to verify product name/details
 Diagnosis: the product was not found in catalog, so the agent correctly avoided pricing and inventory assumptions.
 
 Solution: tool-backed catalog lookup is mandatory before quoting unknown SKUs.
+
+### Case 3: Parser Error / Unknown Tool
+
+The agent includes defensive handling for two technical failure types:
+
+```text
+No valid Action/Final Answer -> AGENT_PARSE_ERROR observation
+Unknown tool call -> {"error": "tool_not_found"}
+```
+
+These cases are verified by `tests/test_agent_failures.py`, so the failure analysis is not only described in prose but also covered by executable tests.
 
 ---
 
